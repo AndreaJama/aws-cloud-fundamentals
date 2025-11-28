@@ -1,9 +1,18 @@
-# cd até a pasta onde está a chave .pem
-cd $HOME\Downloads
 
-# Remover herança de permissões e manter somente leitura para o usuário atual
-icacls ".\treinoweb-maquinas.pem" /inheritance:r
-icacls ".\treinoweb-maquinas.pem" /grant:r "$($env:USERNAME):R"
+## 🔧 Scripts usados
 
-# Conectar na instância (substitua IP se necessário)
+### PowerShell — Ajuste de permissões e SSH
+
+```powershell
+
+# cd até a pasta onde está a chave .pem (no me caso está em Downloads)
+cd .\Downloads
+
+# Remove permissões herdadas
+icacls "C:\Users\AndreaJ\Downloads\treinoweb-maquinas.pem" /inheritance:r
+
+# Concede permissão somente ao usuário atual USERNAME=AndreaJ
+icacls "C:\Users\AndreaJ\Downloads\treinoweb-maquinas.pem" /grant:r AndreaJ:R
+
+# Conectar via SSH. Modifique O IP se necessário
 ssh -i .\treinoweb-maquinas.pem ubuntu@54.94.132.202
