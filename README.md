@@ -18,7 +18,4 @@ Primeira experiência criando e configurando uma instância EC2 do zero:
 - Instalação e testes com o servidor Nginx
 - Verificações básicas do sistema
 
----
-
-## 📂 Estrutura planejada do repositório
 
