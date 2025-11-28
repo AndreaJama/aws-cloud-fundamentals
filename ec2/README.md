@@ -7,5 +7,4 @@ Resumo:
 - Instalar Nginx
 
 Arquivos:
-- connect.ps1 — ajuste de permissões e SSH (Windows)
-- install-nginx.sh — instalação (Ubuntu)
+- connect.ps1 — ajuste de permissões e SSH (Windows) e instalação de nginx (Ubuntu)
