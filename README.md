@@ -5,7 +5,7 @@ Aqui documento comandos, conceitos-chave, experimentos e laboratórios práticos
 
 ---
 
-## 🔥 Módulo Atual – EC2 (Elastic Compute Cloud)
+## EC2 (Elastic Compute Cloud) Lab — Conexão e Nginx
 
 Primeira experiência criando e configurando uma instância EC2 do zero:
 
